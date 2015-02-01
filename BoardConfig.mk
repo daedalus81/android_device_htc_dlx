@@ -43,7 +43,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 #Kernel
 BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=dlx user_debug=0
+BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=dlx user_debug=0 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
@@ -148,4 +148,16 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
-TARGET_RECOVERY_FSTAB := device/htc/dlx/rootdir/etc/fstab.dlx
+TARGET_RECOVERY_FSTAB := device/htc/dlx/fstab.twrp
+
+# TWRP specific build flags
+DEVICE_RESOLUTION := 1080x1920
+TW_INCLUDE_DUMLOCK := true
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_NO_USB_STORAGE := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_INITRC := device/htc/dlx/recovery/root/init.recovery.dlx.rc
+BOARD_SUPPRESS_SECURE_ERASE := true

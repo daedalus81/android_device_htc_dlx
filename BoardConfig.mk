@@ -42,6 +42,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
+TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery: set depending on recovery being built for. (CWM or TWRP)
 #           both init scripts can be found in the recovery folder

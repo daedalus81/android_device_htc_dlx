@@ -361,6 +361,8 @@ service qmuxd /system/bin/qmuxd
 
 service netmgrd /system/bin/netmgrd
     class core
+    user root
+    group root wifi wakelock radio inet
 
 #--SSD_RIL
 

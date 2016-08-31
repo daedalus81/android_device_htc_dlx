@@ -47,7 +47,7 @@ BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=dlx user_debug=0
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-TARGET_KERNEL_SOURCE := kernel/htc/m7
+TARGET_KERNEL_SOURCE := kernel/htc/dlx
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true

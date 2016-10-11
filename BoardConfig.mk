@@ -75,14 +75,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/dlx/bluetooth/include
 BOARD_CUSTOM_BT_CONFIG := device/htc/dlx/bluetooth/vnd_dlx.txt
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 
-# Radio
-BOARD_PROVIDES_LIBRIL := true
-BOARD_RIL_CLASS := ../../../device/htc/dlx/ril
-
-# SELinux
-#include device/qcom/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += device/htc/dlx/sepolicy
-
 # USB
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 

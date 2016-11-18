@@ -11,9 +11,6 @@ PRODUCT_PACKAGE_OVERLAYS += device/htc/dlx/overlay
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/htc/dlx/full_dlx.mk)
 

@@ -1,5 +1,7 @@
 Copyright 2014 - The CyanogenMod Project
 
+Copyright 2017 - The LineageOS Project
+
 Device configuration for HTC Droid DNA
 =====================================
 
@@ -18,4 +20,4 @@ Camera  | 8 MP, 3264 x 2448 pixels
 Release Date | November 2012
 
 
-![Droid DNA](http://wiki.cyanogenmod.org/images/thumb/7/7e/Dlx.png/314px-Dlx.png "Droid DNA")
+![Droid DNA](http://i.imgur.com/zwDO0WW.png "Droid DNA")

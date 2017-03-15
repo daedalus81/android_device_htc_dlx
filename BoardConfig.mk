@@ -121,3 +121,8 @@ TARGET_RECOVERY_FSTAB := device/htc/dlx/rootdir/etc/fstab.dlx
 
 # SDClang
 TARGET_USE_SDCLANG := true
+
+# TWRP Support - Optional
+ifeq ($(WITH_TWRP),true)
+-include device/htc/dlx/twrp.mk
+endif
